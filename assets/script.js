@@ -15,14 +15,14 @@ var questionEl = document.querySelector("#question");
 var answersEl = document.querySelector("#answers");
 var initialsEl = document.querySelector("#initials");
 var clearButton = document.querySelector("#clear");
-var backButton = document.querySelector("#back");
+var restartButton = document.querySelector("#restart");
 var currentQuestion = 0;
 var currQuestion;
 var ulCreate = document.createElement("ul");
 var score = 0;
 var gameover;
 
-startButton.addEventListener("click", startQuiz);
+
 
 function timeSecond() {
     timerEl.textContent = "Time: " + timeLeft;
@@ -86,10 +86,7 @@ function compare(event) {
         } else {
             timeLeft = timeLeft - penalty;
             
-            if (timeLeft < 0) {
-                timeLeft = 0;
-            }
-            alert("Wrong answer!");
+            currQuestion++;
         }
     }
     if (currentQuestion >= questions.length ) {
@@ -149,11 +146,8 @@ function highscoreDisplay(event) {
     }
 }
 
-clearButton.addEventListener("click", function () {
-    localStorage.clear();
-    location.reload();
-});
 
-backButton.addEventListener("click", function () {
+
+restartButton.addEventListener("click", function () {
     window.location.replace("./index.html");
 });
