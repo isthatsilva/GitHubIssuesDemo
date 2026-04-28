@@ -22,7 +22,8 @@ var ulCreate = document.createElement("ul");
 var score = 0;
 var gameover;
 
-
+// issue #1
+// startButton.addEventListener("click", startQuiz);
 
 function timeSecond() {
     timerEl.textContent = "Time: " + timeLeft;
@@ -86,6 +87,11 @@ function compare(event) {
         } else {
             timeLeft = timeLeft - penalty;
             
+            /* issue #2
+            if (timeLeft < 0) {
+                timeLeft = 0;
+            }
+            alert("Wrong Answer!"); */
             currQuestion++;
         }
     }
@@ -145,9 +151,12 @@ function highscoreDisplay(event) {
         localStorage.setItem("everyHighscore", newScore);
     }
 }
-
-
-
+/* issue #3
+clearButton.addEventListener("click", function () {
+    localStorage.clear();
+    location.reload();
+});
+*/
 restartButton.addEventListener("click", function () {
     window.location.replace("./index.html");
 });
