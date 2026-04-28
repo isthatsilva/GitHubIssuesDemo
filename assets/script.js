@@ -85,7 +85,10 @@ function compare(event) {
             currentQuestion++
         } else {
             timeLeft = timeLeft - penalty;
-            // currentQuestion++
+            
+            if (timeLeft < 0) {
+                timeLeft = 0;
+            }
         }
     }
     if (currentQuestion >= questions.length ) {
