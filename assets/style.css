@@ -31,12 +31,18 @@
 
 h1, h2 {
     text-align: center;
-    color: linear-gradient(45deg, rgb(253, 158, 41), rgb(14, 254, 114), rgb(21, 9, 249), rgb(252, 38, 81));
+    background: linear-gradient(45deg, rgb(253, 158, 41), rgb(14, 254, 114), rgb(21, 9, 249), rgb(252, 38, 81));
     /* background-size: 300% 300%; */
     animation: color 12s ease-in-out infinite;
     
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 p {
@@ -62,7 +68,7 @@ button {
 
 ul {
     cursor: pointer;
-    list-style-type: circle;
+    list-style-type: none;
     transition: all 0.3s ease-in-out;
 }
 
