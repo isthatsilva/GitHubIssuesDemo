@@ -1,6 +1,6 @@
 var timerEl = document.getElementById("timer");
-var timeLeft = 20;
-var penalty = 5;
+var timeLeft = 30;
+var penalty = 3;
 var timerID;
 var titleEl = document.getElementById("title");
 var quizEl = document.getElementById("quiz");
@@ -44,6 +44,11 @@ var questions = [
         choices: ["To build teamwork", "To test patience", "To let one person do everything", "To create villains"],
         answer: "To let one person do everything"
     },
+    {
+        question: "True or False: You used A.I. for this class",
+        choices: ["True. I just don't understand sometimes--or at all", "False. I pay attention in class"],
+        answer: "False. I pay attention in class"
+    },
 ];
 
 function startQuiz() {
@@ -76,7 +81,7 @@ function compare(event) {
     var selectedAnswer = event.target;
     if (selectedAnswer.matches("li")) {
         if (selectedAnswer.textContent === questions[currentQuestion].answer) {
-            score = score + 50;
+            score = score + 10;
             currentQuestion++
         } else {
             timeLeft = timeLeft - penalty;
