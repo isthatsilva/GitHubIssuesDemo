@@ -1,5 +1,5 @@
 var timerEl = document.getElementById("timer");
-var timeLeft = 15;
+var timeLeft = 20;
 var penalty = 5;
 var timerID;
 var titleEl = document.getElementById("title");
@@ -35,14 +35,14 @@ function timeSecond() {
 
 var questions = [
     {
-        question: "What is the abbreviation for JavaScript?",
-        choices: ["JavaS", "JVS", "JS", "JScript"],
-        answer: "JS"
+        question: "Which one is most likely to catch you cheating first?",
+        choices: ["Your partner", "Your diet", "Your phone's screen time report", "Your professor using Turnitin"],
+        answer: "Your professor using Turnitin"
     },
     {
-        question: "What is JavaScript used for?",
-        choices: ["To add styling", "To create content", "To add logic"],
-        answer: "To add logic"
+        question: "Why do group projects exist?",
+        choices: ["To build teamwork", "To test patience", "To let one person do everything", "To create villains"],
+        answer: "To let one person do everything"
     },
 ];
 
