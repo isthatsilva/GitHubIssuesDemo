@@ -89,6 +89,7 @@ function compare(event) {
             if (timeLeft < 0) {
                 timeLeft = 0;
             }
+            alert("Wrong answer!");
         }
     }
     if (currentQuestion >= questions.length ) {
