@@ -176,7 +176,3 @@ Then:
 - Markdown
 - Git / GitHub Workflow
 
----
-
-## License
-This project is for educational demonstration purposes.
