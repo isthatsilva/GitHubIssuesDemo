@@ -33,10 +33,10 @@ Navigate to the **Issues** tab and click **New Issue**.
 
 Example bug report:
 
-**Title:** Login button does not respond
+**Title:** Start Quiz button does not respond
 
 **Description:**
-- Click login button
+- Click Start Quiz button
 - Nothing happens
 - Console shows JavaScript error
 
@@ -85,7 +85,7 @@ Issues can be assigned to contributors for ownership.
 
 Example:
 
-Issue #12 → Assigned to @developer
+Issue #3 → Assigned to @developer
 
 ---
 
@@ -130,19 +130,6 @@ Fixes #15
 
 ---
 
-## Screenshots (Optional)
-Add screenshots in `/docs/screenshots/`
-
-Example:
-
-```md
-![Create Issue](docs/screenshots/create-issue.png)
-![Issue Labels](docs/screenshots/labels.png)
-![Milestones](docs/screenshots/milestones.png)
-```
-
----
-
 ## Benefits of GitHub Issues
 - Built into GitHub
 - Easy collaboration
@@ -157,8 +144,8 @@ Example:
 Clone repository:
 
 ```bash
-git clone https://github.com/yourusername/github-issues-demo.git
-cd github-issues-demo
+git clone https://github.com/isthatsilva/GitHubIssuesDemo.git
+cd GitHubIssuesDemo
 ```
 
 Then:
@@ -172,7 +159,6 @@ Then:
 
 ## Technologies Used
 - GitHub Issues
-- GitHub Projects
 - Markdown
 - Git / GitHub Workflow
 
