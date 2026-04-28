@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header>
+        <div id="timer">Time: 15</div>
+    </header>
+
+    <div id="container">
+        <div id="title" class="show">
+            <h1>Code Quiz Challenge</h1>
+            <p>Click "Start Quiz" to see how much you know about JavaScript. Time drops by 5 seconds for every incorrect answer choice. Good luck!</p>
+            <button id="start">Start Quiz</button>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="quiz" class="hide">
+            <h2 id="question">Question</h2>
+            <ul id="answers"></ul>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="results" class="hide">
+            <h2 id="score"></h2>
+            <form id="initials-form">
+                <p> Enter Initials:
+                    <input type="text" id="initials" placeholder="Initials">
+                    <button id="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="highscores" class="hide">
+            <h2>Highscores</h2>
+            <ol id="all-scores"></ol>
+            <button id="back">Go back</button>
+            <button id="clear">Clear Highscores</button>
+        </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
