@@ -26,13 +26,13 @@ code {
 }
 
 .intitalsBox {
-    color: white;
+    color: black;
 }
 
 h1, h2 {
     text-align: center;
-    background: linear-gradient(45deg, rgb(253, 158, 41), rgb(14, 254, 114), rgb(21, 9, 249), rgb(252, 38, 81));
-    background-size: 300% 300%;
+    color: linear-gradient(45deg, rgb(253, 158, 41), rgb(14, 254, 114), rgb(21, 9, 249), rgb(252, 38, 81));
+    /* background-size: 300% 300%; */
     animation: color 12s ease-in-out infinite;
     
     -webkit-font-smoothing: antialiased;
@@ -41,7 +41,6 @@ h1, h2 {
 
 p {
     text-align: center;
-    color: white;
 }
 
 @keyframes color{
@@ -64,6 +63,14 @@ button {
 ul {
     cursor: pointer;
     list-style-type: circle;
+}
+li {
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+    color: lightskyblue;
 }
 
 #container {
