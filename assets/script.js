@@ -88,9 +88,9 @@ function compare(event) {
             timeLeft = timeLeft - penalty;
             
             // issue #2
-            if (timeLeft < 0) {
-                timeLeft = 0;
-            }
+            // if (timeLeft < 0) {
+            //     timeLeft = 0;
+            // }
             alert("Wrong Answer!");
             currQuestion++;
         }
