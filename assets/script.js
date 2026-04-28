@@ -88,9 +88,9 @@ function compare(event) {
             timeLeft = timeLeft - penalty;
             
             // issue #2
-            
-            currQuestion++;
             alert("Wrong Answer!");
+            currentQuestion++
+            
         }
     }
     if (currentQuestion >= questions.length ) {
