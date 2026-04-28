@@ -1,5 +1,5 @@
 var timerEl = document.getElementById("timer");
-var timeLeft = 50;
+var timeLeft = 60;
 var penalty = 5;
 var timerID;
 var titleEl = document.getElementById("title");
@@ -88,11 +88,9 @@ function compare(event) {
             timeLeft = timeLeft - penalty;
             
             // issue #2
-            // if (timeLeft < 0) {
-            //     timeLeft = 0;
-            // }
-            alert("Wrong Answer!");
+            
             currQuestion++;
+            alert("Wrong Answer!");
         }
     }
     if (currentQuestion >= questions.length ) {
