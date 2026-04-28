@@ -69,10 +69,13 @@ button {
 ul {
     cursor: pointer;
     list-style-type: none;
+    
+}
+#answers li{
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-
-ul:hover {
+#answers li:hover {
     color: lightskyblue;
 }
 
