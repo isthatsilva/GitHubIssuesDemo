@@ -1,6 +1,6 @@
 var timerEl = document.getElementById("timer");
 var timeLeft = 30;
-var penalty = 3;
+var penalty = 5;
 var timerID;
 var titleEl = document.getElementById("title");
 var quizEl = document.getElementById("quiz");
