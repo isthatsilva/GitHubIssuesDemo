@@ -23,7 +23,7 @@ var score = 0;
 var gameover;
 
 // issue #1
-startButton.addEventListener("click", startQuiz);
+// startButton.addEventListener("click", startQuiz);
 
 function timeSecond() {
     timerEl.textContent = "Time: " + timeLeft;
