@@ -36,9 +36,9 @@ function timeSecond() {
 
 var questions = [
     {
-        question: "Which one is most likely to catch you cheating first?",
-        choices: ["Your partner", "Your diet", "Your phone's screen time report", "Your professor using Turnitin"],
-        answer: "Your professor using Turnitin"
+        question: "Whats your biggest academic skill?",
+        choices: ["Studying", "Guessing", "Using ChatGPT", "Surviving"],
+        answer: "Using ChatGPT"
     },
     {
         question: "Why do group projects exist?",
